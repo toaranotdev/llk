@@ -1,5 +1,3 @@
-![image](/screenshots/game.png)
-
 # LianLianKan (连连看)
 - A game where you connect stuff together. This goes by a lot of games like: Onet Classic, Animal Connect Game, Kawai,... but it's mostly known as Pikachu
 where I live ;)
@@ -22,15 +20,24 @@ entire game in Qt and C++ just so I can play it in peace.
 # Dependencies
 - Qt 5.15
 - CMake
-- make
-- g++
 
 # Compiling 
 - Feel free to open any issues, regardless of it's potential stupidity, because at the end of the day I'm also a dumbass xd
 
 ## Windows
 - Go to [Qt's website](https://www.qt.io/) and download the online installer
-- Install Qt5
+- Install Qt5 (remember to select MinGW as the compiler, or whatever it is just select it alright)
+- Open the Qt5 terminal (I'm using Qt 5.15.2 MinGW 8.1.0 64bit for reference) and then:
+```sh
+mkdir build
+cd build
+cmake .. -G "MinGW Makefiles"
+mingw32-make
+```
+- Copy the .exe into a new folder and type
+```sh
+windeployqt llk.exe --no-translations --no-system-d3d-compiler
+```
 
 ## Linux
 - Install the Qt5 library using your preferred package manager, and then:
