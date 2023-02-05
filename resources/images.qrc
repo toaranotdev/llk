@@ -10,12 +10,12 @@
 	<file alias="08.jpg">background/08.jpg</file>
 	<file alias="09.jpg">background/09.jpg</file>
 	<file alias="10.jpg">background/10.jpg</file>
+	<file alias="titlescreen.jpg">background/titlescreen.jpg</file>	
 	
 	<file alias="background.png">texture/background.png</file>
 	<file alias="cross.png">texture/cross.png</file>
 	<file alias="font.png">texture/font.png</file>
 	<file alias="foreground.png">texture/foreground.png</file>
 	<file alias="selection.png">texture/selection.png</file>
-	<file alias="titlescreen.png">texture/titlescreen.png</file>	
 </qresource>
 </RCC>
