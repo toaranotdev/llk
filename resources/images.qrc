@@ -1,0 +1,21 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+	<file alias="01.jpg">background/01.jpg</file>
+	<file alias="02.jpg">background/02.jpg</file>
+	<file alias="03.jpg">background/03.jpg</file>
+	<file alias="04.jpg">background/04.jpg</file>
+	<file alias="05.jpg">background/05.jpg</file>
+	<file alias="06.jpg">background/06.jpg</file>
+	<file alias="07.jpg">background/07.jpg</file>
+	<file alias="08.jpg">background/08.jpg</file>
+	<file alias="09.jpg">background/09.jpg</file>
+	<file alias="10.jpg">background/10.jpg</file>
+	
+	<file alias="background.png">texture/background.png</file>
+	<file alias="cross.png">texture/cross.png</file>
+	<file alias="font.png">texture/font.png</file>
+	<file alias="foreground.png">texture/foreground.png</file>
+	<file alias="selection.png">texture/selection.png</file>
+	<file alias="titlescreen.png">texture/titlescreen.png</file>	
+</qresource>
+</RCC>

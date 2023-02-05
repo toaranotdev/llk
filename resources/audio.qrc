@@ -1,0 +1,16 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+	<file alias="Track 1.ogg">music/Track 1.ogg</file>
+	<file alias="Track 2.ogg">music/Track 2.ogg</file>
+	<file alias="Track 3.ogg">music/Track 3.ogg</file>
+	<file alias="Track 4.ogg">music/Track 4.ogg</file>
+	<file alias="Track 5.ogg">music/Track 5.ogg</file>
+
+	<file alias="cancel.wav">sound/cancel.wav</file>
+	<file alias="choose.wav">sound/choose.wav</file>
+	<file alias="connect.wav">sound/connect.wav</file>
+	<file alias="ding.wav">sound/ding.wav</file>
+	<file alias="shuffle.wav">sound/shuffle.wav</file>
+	<file alias="uh_oh.wav">sound/uh_oh.wav</file>
+</qresource>
+</RCC>

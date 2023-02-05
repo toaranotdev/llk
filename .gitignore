@@ -1,0 +1,4 @@
+# build files
+build/*
+# clangd cache files idk what it's used for but ok
+.cache/*
