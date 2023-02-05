@@ -19,9 +19,10 @@ int main (int argc, char* argv[]) {
 	gameMenu->addSeparator();
 	gameMenu->addAction(game.closeWindowAct);
 
+	// some platform specific code blablabla who cares
 	#ifdef Q_OS_WIN
 	int menuBarHeight = menuBar->size().height() - 9;
-	#elif def Q_OS_LINUX
+	#else
 	int menuBarHeight = menuBar->size().height() - 3;
 	#endif
 

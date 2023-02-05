@@ -43,7 +43,7 @@ void Game::InitializeTextures() {
 	this->selection.load(":/selection.png");
 	this->cross.load(":/cross.png");
 	this->font.load(":/font.png");
-	this->backgroundImage.load(":/titlescreen.png");
+	this->backgroundImage.load(":/titlescreen.jpg");
 
 	// foreground texture coordinate
 	for (int i = 1; i < 36; i ++) {
@@ -554,7 +554,7 @@ void Game::ExitGame() {
 	// clear all the game data for that current session
 	this->matrix.ClearAll();
 
-	this->backgroundImage.load(":/titlescreen.png");
+	this->backgroundImage.load(":/titlescreen.jpg");
 	this->currentScene = Scenes::TITLE;
 }
 
