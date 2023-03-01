@@ -7,9 +7,6 @@
 	<file alias="05.jpg">background/05.jpg</file>
 	<file alias="06.jpg">background/06.jpg</file>
 	<file alias="07.jpg">background/07.jpg</file>
-	<file alias="08.jpg">background/08.jpg</file>
-	<file alias="09.jpg">background/09.jpg</file>
-	<file alias="10.jpg">background/10.jpg</file>
 	<file alias="titlescreen.jpg">background/titlescreen.jpg</file>	
 	
 	<file alias="background.png">texture/background.png</file>
