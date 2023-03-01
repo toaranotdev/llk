@@ -18,6 +18,7 @@ entire game in Qt and C++ just so I can play it in peace.
 
 # Compiling 
 - Feel free to open any issues, regardless of it's potential stupidity, because at the end of the day I'm also a dumbass xd
+- Please note that this is linking agaisnt shared Qt libraries. If you want static linking, set ``-DCMAKE_PREFIX_PATH`` to where the static library is located
 
 ## Windows
 - Go to [Qt's website](https://www.qt.io/) and download the online installer
@@ -44,7 +45,7 @@ make
 ```
 
 ## Android
-- No idea how the fuck am I going to implement the UI on android, sorry. It will happen, that's for sure but god knows how long it will take
+- Currently busy with school and I don't have much experience with Android, sorry.
 
 ## iOS
 - Give me 99$ and I'll make one
@@ -55,5 +56,4 @@ make
 
 # Credits
 - CHEN PROGRAM STUDY for making this absolute legend of a game ;)
-- Artists who cover/make those additional songs besides from the original ones that I included
-	- Joes Jenkins
+- Joe Jenkins for the River Flows in You cover (I know it's not canonical but I like it so why not hehe)
