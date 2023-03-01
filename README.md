@@ -45,7 +45,7 @@ make
 ```
 
 ## Android
-- Currently busy with school and I don't have much experience with Android, sorry.
+- Currently busy with school and I don't have much experience with Android, sorry. I'll figure it out one day, it was one of my main goal when starting this project afterall
 
 ## iOS
 - Give me 99$ and I'll make one
