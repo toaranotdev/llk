@@ -125,11 +125,11 @@ class Game : public QWidget {
 		int currentScene;
 		int seed;
 
+
 		enum Scenes {
 			TITLE,
 			IN_GAME
 		};
-
 	private slots:
 		void ClearConnection();
 

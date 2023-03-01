@@ -4,6 +4,7 @@ Game::Game(QWidget* parent /* = nullptr */ ) : QWidget(parent), messageBox(this)
 	this->selectedIndex = -1;
 	this->score = 0;
 	this->remainingLives = 0;
+	this->isConnecting = false;
 	// technically the background tiles and the foreground isn't the same size
 	// but using the background size (46x56) will cause qt to fuck itself up
 	// when rendering so i have no idea lol
@@ -91,11 +92,11 @@ void Game::InitializeSoundEffects() {
 }
 
 void Game::InitializeMusics() {
-	this->musicList.addMedia(QUrl ("qrc:///Track 1.ogg"));
-	this->musicList.addMedia(QUrl ("qrc:///Track 2.ogg"));
-	this->musicList.addMedia(QUrl ("qrc:///Track 3.ogg"));
-	this->musicList.addMedia(QUrl ("qrc:///Track 4.ogg"));
-	this->musicList.addMedia(QUrl ("qrc:///Track 5.ogg"));
+	this->musicList.addMedia(QUrl ("qrc:///Track 1.mp3"));
+	this->musicList.addMedia(QUrl ("qrc:///Track 2.mp3"));
+	this->musicList.addMedia(QUrl ("qrc:///Track 3.mp3"));
+	this->musicList.addMedia(QUrl ("qrc:///Track 4.mp3"));
+	this->musicList.addMedia(QUrl ("qrc:///Track 5.mp3"));
 	
 	this->musicList.setPlaybackMode(QMediaPlaylist::Loop);
 	this->musicPlayer.setPlaylist(&this->musicList);
@@ -103,7 +104,7 @@ void Game::InitializeMusics() {
 
 	QObject::connect(&musicList, &QMediaPlaylist::currentIndexChanged, [this](int index)->void { 	
 		if (index == 4 && this->currentScene == Scenes::IN_GAME) {
-			std::uniform_int_distribution<int> distribution(9, 10);
+			std::uniform_int_distribution<int> distribution(6, 7);
 			std::default_random_engine generator;
 			generator.seed(this->seed);
 
@@ -486,7 +487,7 @@ void Game::SelectBackgroundColor() {
 }
 
 void Game::SelectBackgroundImage() {	
-	std::uniform_int_distribution<int> distribution(1, 8);
+	std::uniform_int_distribution<int> distribution(1, 5);
 	std::default_random_engine generator;
 	generator.seed(this->seed);
 

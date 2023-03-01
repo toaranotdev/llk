@@ -2,13 +2,14 @@
 #include <QMainWindow>
 #include <QMenuBar>
 #include <QMenu>
+#include <QSizePolicy>
+#include <qsizepolicy.h>
 
 #include "game.h"
 
 int main (int argc, char* argv[]) {
 	QApplication application (argc, argv);
 	QMainWindow mainWindow;
-
 	Game game(&mainWindow);
 
 	QMenuBar* menuBar = mainWindow.menuBar();
@@ -19,17 +20,12 @@ int main (int argc, char* argv[]) {
 	gameMenu->addSeparator();
 	gameMenu->addAction(game.closeWindowAct);
 
-	// some platform specific code blablabla who cares
-	#ifdef Q_OS_WIN
-	int menuBarHeight = menuBar->size().height() - 9;
-	#else
-	int menuBarHeight = menuBar->size().height() - 3;
-	#endif
-
-	mainWindow.resize(QSize (768, 550 + menuBarHeight));
+	mainWindow.resize(QSize (768, 550));
 	game.resize(QSize(768, 550));
+	game.setMinimumSize(game.size());
 
 	mainWindow.setCentralWidget(&game);
+
 	mainWindow.show();
 	game.show();
 
