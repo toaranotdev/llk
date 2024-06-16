@@ -45,7 +45,11 @@ make
 ```
 
 ## Android
-- Currently busy with school and I don't have much experience with Android, sorry. I'll figure it out one day, it was one of my main goal when starting this project afterall
+-  Qt is extremely bloated and clunky. It might be acceptable on a
+computer  although I'm not very happy with the binary size there either,
+but I can't do jackshit about it. For Android this will require an entire
+different codebase. I can't run Android Studio without frying my
+computer so sadly this is never gonna happen (One of the goals I wanna accomplish for this project)
 
 ## iOS
 - Give me 99$ and I'll make one
